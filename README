@@ -1,0 +1,13 @@
+Creators: Alex Upah, Cade Kuennen, Bella Singh 
+Class: EE 285 Fall 22, Dr. Zambreno
+Assistance provided by Dr. Zambreno
+
+The following project is an implementation of the classic Pacman game using the ncurses library. The rules of this game are exaclty like the classic Pacman game where you control your Pacman character via the arrows keys in the expected ways, right arrow key turns Pacman right, etc, you also are able to eat the ghosts after eating a powerup for a duration of 10 seconds before they return to chasing you. 
+
+For the first three levels, an increase in level results in an increase of speed for both the ghosts and Pacman, slightly narrowing the speed gap between pacman and the ghosts. After level three, there is no more speed increases as you have reached the hardest difficulty. 
+
+In this project, there are three files that contain relevant code or structures used to create the game. The first file is the map file, which contains a basic encoding of the map design, with certain character alignments. A function populate board reads through this map file, and assigns the desired values for our coded board. **Changing this map file will results in changes to the functionality of the game**
+
+The second file is the pacman.h file, containing all relevant global variable definitions, struct definitons, and function prototypes. The third file contains the main function which actually plays the game, and all other function definitions which create the desired functionality. All functions are properly named and commented throughout the code. Once again, editing this code will drastically alter the functionality of the game. If you do find that the frame rate feels too fast or two slow based on your device, it is editble by changing the value passed to the function usleep on line 821, and increasing the value will result in a slower frame rate. 
+
+For reasons unknown to us, the coloring will ocassionally stop working in the replit console, and will be noticeable as the orange ghost will be seen as grey. This only occurs on first play, and will not happen mid play of the game. If this occurs, our best solution is to simply reload the site, or execute the game in the shell terminal, rather than the console, using the pacman executable. If the board only appears halfway on first load up, also reload the browser, as replit is once again doing funny things for no reason, and it is not an issue with the code, unless edits to the code have been made. 
